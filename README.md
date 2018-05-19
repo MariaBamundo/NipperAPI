@@ -1,5 +1,7 @@
 # To Run
-1) Have node installed on your machine. You can do so by running "npm install -g nodemon" from your terminal.
+1) Have node installed on your machine. You can do so at https://nodejs.org/en/
+
+2) Have nodemon installed on your machine. You can do so by running "npm install -g nodemon" from your terminal.
 
 2) Use the terminal cd to the directory of this project
 
