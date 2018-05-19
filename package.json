@@ -1,0 +1,35 @@
+{
+  "name": "nipperapi",
+  "version": "1.0.0",
+  "description": "RESTful API for retrieving statue data located in json file",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaBamundo/NipperAPI.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "Dog",
+    "Nipper",
+    "Statue"
+  ],
+  "author": "Maria Bamundo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaBamundo/NipperAPI/issues"
+  },
+  "homepage": "https://github.com/MariaBamundo/NipperAPI#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.4",
+    "ws": "3.3.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "fuse.js": "^3.2.0"
+  }
+}
