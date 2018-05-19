@@ -3,7 +3,7 @@
 
 2) Use the terminal cd to the directory of this project
 
-3) Use the command npm run start to start the node server
+3) Use the command "npm run start" to start the node server
 
 4) Type http://127.0.0.1:49496/index.html into you browser's search bar
 
