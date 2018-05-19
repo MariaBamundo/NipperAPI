@@ -10,3 +10,5 @@
 4) Type http://127.0.0.1:49496/index.html into you browser's search bar
 
 5) Use the buttons and search bar to organize and display specific data
+
+6) To stop the node server from running use "control c" from the terminal
