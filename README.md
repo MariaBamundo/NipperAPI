@@ -1,5 +1,5 @@
 # To Run
-1) have node installed on your computer 
+1) Have node installed on your computer 
 
 2) Use the terminal cd to the directory of this project
 
