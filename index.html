@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <!--CSS Links for style -->
   <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
   <link href="css/app.css" rel="stylesheet" />
@@ -15,31 +16,34 @@
   <div class="main" ng-controller="appController" ng-init="show_data()">
 
     <div class="container">
-
-      <!-- Expression to display title on the page.-->
+        
         <div>
+            <!-- Expression to display title on the page.-->
             <h1>{{ title }}</h1>
-            <div class = "search">
-                <input type="text" id="search" placeholder="search by name..."/>
-                <input type="button" id="btnSearch" value="Search" ng-click="search();" />
-            </div>
         </div>
-        <div class="sorting options">
+        
+        <!-- Search bar code-->
+        <div class = "search">
+            <input type="text" id="search" placeholder="search by name..."/>
+            <input type="button" id="btnSearch" value="Search" ng-click="search();" />
+        </div>
+        
+        <!-- buttons for each of the sorting options -->
+        <div class="sorting options"> 
             <button type="button" ng-click="order_by('nameButton', 'name')" value = "asc" id = "nameButton">Order by Name</button>
             <button type="button" ng-click="order_by('artistButton', 'artist')" value = "asc" id = "artistButton">Order by Artist</button>
             <button type="button" ng-click="order_by('addressButton', 'address')" value = "asc" id = "addressButton">Order by Address</button>
-      </div>
-        
-      <div ng-repeat="product in products" class="col-md-6">
-        <div class="thumbnail">
-          <!-- The ng-src is a directive that sets the <img> element's src to a property in the controller. -->
-            <p class="title">{{ product.name }}</p>
-            <img ng-src="{{ product.path }}">
-            <p class="artist">By: {{ product.artist }}</p>
-            <p class="address">On: {{ product.address }}</p>
-
         </div>
-      </div>
+        
+        <!-- For each statue to be dislayed show the following data inside of a thumbnail-->
+        <div ng-repeat="product in products" class="col-md-6">
+            <div class="thumbnail">
+                <p class="title">{{ product.name }}</p>
+                <img ng-src="{{ product.path }}">
+                <p class="artist">By: {{ product.artist }}</p>
+                <p class="address">On: {{ product.address }}</p>
+            </div>     
+        </div>
 
     </div>
   </div>
