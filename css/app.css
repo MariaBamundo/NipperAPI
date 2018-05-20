@@ -96,9 +96,9 @@ button:hover {
     transition: background 500ms;
 }
 
-button[value="asc"]:hover:after {content:" +"}
+button[value="asc"]:hover:after {content: " ⇧"}
 
-button[value="desc"]:hover:after {content:" -"}
+button[value="desc"]:hover:after {content:" ⇩"}
 
 .search {
     float:right;
