@@ -1,0 +1,35 @@
+ <!-- Set up this view with the appropriate controller and init method to show all of the data-->
+<div class="main" ng-controller="appController" ng-init="show_data()">
+    <div class="container">
+        
+        <div>
+            <!-- Expression to display title on the page.-->
+            <h1>{{ title }}</h1>
+        </div>
+        
+        <!-- Search bar code-->
+        <div class = "search">
+            <input type="text" id="search" placeholder="filter by name..." ng-keyup="search();"/>
+        </div>
+        
+        <!-- buttons for each of the sorting options -->
+        <div class="sorting options"> 
+            <button type="button" ng-click="order_by('nameButton', 'name')" value = "asc" id = "nameButton">Order by Name</button>
+            <button type="button" ng-click="order_by('artistButton', 'artist')" value = "asc" id = "artistButton">Order by Artist</button>
+            <button type="button" ng-click="order_by('addressButton', 'address')" value = "asc" id = "addressButton">Order by Address</button>
+        </div>
+        
+        <br>
+        
+        <!-- For each statue to be dislayed show the following data inside of a thumbnail-->
+        <div ng-repeat="statue in statues" class="col-md-6">
+            <div id = "{{ statue.name }}" ng-click = "set_single_statue()" class="thumbnail">
+                <p class="title" id = "{{ statue.name }}" ng-click = "set_single_statue()">{{ statue.name }} </p>
+                <img ng-src="{{ statue.path }}" id = "{{ statue.name }}" ng-click = "set_single_statue()" >
+                <p class="artist" id = "{{ statue.name }}" ng-click = "set_single_statue()">By: {{ statue.artist }}</p>
+                <p class="address" id = "{{ statue.name }}" ng-click = "set_single_statue()">On: {{ statue.address }}</p>
+            </div>     
+        </div>
+
+    </div>
+</div>

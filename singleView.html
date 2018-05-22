@@ -1,0 +1,28 @@
+ <!-- Set up this view with the appropriate controller and init method to get a single statue-->
+<div class="main" ng-controller="appController" ng-init="get_single_statue()">
+    <div class="container">
+        
+        <div>
+            <!-- Expression to display title on the page.-->
+            <h1>{{ title }}</h1>
+        </div>
+        
+        
+        <!-- buttons for each of the sorting options -->
+        <div class="sorting options"> 
+            <button type="button" ng-click = "back()" >Back</button>
+        </div>
+        
+        <br>
+        
+        <!-- Display data for a single statue using single_statue which is stored locally-->
+            <div class="single_thumbnail">
+                <p class="title">{{ single_statue.name }}</p>
+                <p class="title">{{ console.log("hello") }}</p>
+                <img ng-src="{{ single_statue.path }}">
+                <p class="artist">By: {{ single_statue.artist }}</p>
+                <p class="address">On: {{ single_statue.address }}</p>
+            </div>     
+        </div>
+
+</div>

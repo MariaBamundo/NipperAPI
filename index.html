@@ -9,43 +9,14 @@
 
   <!-- Include the AngularJS library -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.js"></script>
 </head>
-
+    
 <body ng-app="myApp">
 
-  <div class="main" ng-controller="appController" ng-init="show_data()">
+  <div ng-view></div>
+      
 
-    <div class="container">
-        
-        <div>
-            <!-- Expression to display title on the page.-->
-            <h1>{{ title }}</h1>
-        </div>
-        
-        <!-- Search bar code-->
-        <div class = "search">
-            <input type="text" id="search" placeholder="filter by name..." ng-keyup="search();"/>
-        </div>
-        
-        <!-- buttons for each of the sorting options -->
-        <div class="sorting options"> 
-            <button type="button" ng-click="order_by('nameButton', 'name')" value = "asc" id = "nameButton">Order by Name</button>
-            <button type="button" ng-click="order_by('artistButton', 'artist')" value = "asc" id = "artistButton">Order by Artist</button>
-            <button type="button" ng-click="order_by('addressButton', 'address')" value = "asc" id = "addressButton">Order by Address</button>
-        </div>
-        
-        <!-- For each statue to be dislayed show the following data inside of a thumbnail-->
-        <div ng-repeat="product in products" class="col-md-6">
-            <div class="thumbnail">
-                <p class="title">{{ product.name }}</p>
-                <img ng-src="{{ product.path }}">
-                <p class="artist">By: {{ product.artist }}</p>
-                <p class="address">On: {{ product.address }}</p>
-            </div>     
-        </div>
-
-    </div>
-  </div>
 
   <!-- Modules -->
   <script src="./app.js"></script>

@@ -1,3 +1,5 @@
+/* CSS specified by me for aesthetic purposes. */
+
 html, body {
  margin: 0;
  padding: 0;
@@ -23,51 +25,82 @@ html, body {
 }
 
 .main h1 {
- color: #F65A5B;
- font-size: 64px;
- margin: 0 0 80px 0;
- padding: 20px 0;
-   line-height: 60px;
-   width: 50%;
+    color: #F65A5B;
+    font-size: 64px;
+    margin: 0 0 80px 0;
+    padding: 20px 0;
+    line-height: 60px;
+    width: 50%;
 }
 
 .main h2 {
- background-color: #DDDDDD ;
- color: #999999 ;
- font-size: 20px;
- margin: 0 0 40px 0;
- padding: 20px 0;
+    background-color: #DDDDDD ;
+    color: #999999 ;
+    font-size: 20px;
+    margin: 0 0 40px 0;
+    padding: 20px 0;
 }
 
 .thumbnail {
- border: 0px;
- position: relative;
- padding: 50px;
-   border-radius: 0;
-   margin-bottom:50px;
+    border: 0px;
+    position: relative;
+    padding: 50px;
+    border-radius: 0;
+    margin-bottom:50px;
+    height: 750px;
 }
 
+.single_thumbnail {
+    border: 0px;
+    position: relative;
+    padding: 50px;
+    border-radius: 0;
+    margin-bottom:50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.single_thumbnail img {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+.thumbnail:hover {
+    color: #F65A5B;
+    background: rgba(246, 90, 91, 0.25);
+    transition: background 500ms;
+    
+}
+
+.thumbnail:hover p{
+    color: #F65A5B;
+} 
+
 .thumbnail img {
- margin-top: 10px;
- margin-bottom: 30px;
- max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    max-height: 550px;
 }
 
 .title{
- color: #444;
- margin: 0;
- font-size: 18px;
-   font-weight: 800;
+    color: #444;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .footer {
- text-align: center;
- margin: 80px 0 110px;
+    text-align: center;
+    margin: 80px 0 110px;
 }
 
 .footer h2 {
- font-size: 24px;
- margin-bottom: 25px;
+    font-size: 24px;
+    margin-bottom: 25px;
 }
 
 .footer img {
@@ -75,20 +108,20 @@ html, body {
 }
 
 button {
-   background: #F65A5B ;
- color: #fff;
- cursor: pointer;
- display: inline-block;
- font-size: 15px;
-   line-height: 40px;
-   min-width: 40px;
-   height: 40px;
-   border-radius: 50%;
- margin: 0 -30px 0 40px;
-   text-align: center;
-   font-weight: 200;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-   transition: background 500ms;
+    background: #F65A5B ;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    margin: 0 -30px 0 40px;
+    text-align: center;
+    font-weight: 200;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 500ms;
 }
 button:hover {
     color: #F65A5B ;
@@ -105,4 +138,5 @@ button[value="desc"]:hover:after {content:" ⇩"}
     color:#F65A5B;
     border: 2px solid #F65A5B;
 } 
+
 
